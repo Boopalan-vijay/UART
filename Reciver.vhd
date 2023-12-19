@@ -163,7 +163,7 @@ signal IRQ :std_logic:='0';
 							
 					when collect_data=>
 						start<='0';
-						if ready<='1' then 
+						if ready='1' then 
 							state<=ASSERT_IRQ;
 						end if;	
 					when ASSERT_IRQ=>
