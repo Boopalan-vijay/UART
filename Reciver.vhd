@@ -156,7 +156,7 @@ signal IRQ :std_logic:='0';
 							start<='0';
 						end if;
 
-						if(ready<='0')then
+						if(ready='0')then
 							start<='0';
 							state<=collect_data;
 					end if ;
